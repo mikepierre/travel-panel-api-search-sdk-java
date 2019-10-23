@@ -1,0 +1,23 @@
+#Auth
+auth:
+#Hotels
+hotels_book:
+hotels_get_external_markets:
+hotels_get_ids:
+hotels_get_images:
+hotels_get_profile_by_id:
+hotels_get_locations:
+hotels_get_rates:
+hotels_search:
+
+#Cars
+cars_book:
+cars_cancel:
+cars_locations:
+cars_rates:
+#Attractions
+attraction_tickets_book:
+attaction_tickets_get_rates:
+#Transportation Services
+transport_search:
+transport_book:
