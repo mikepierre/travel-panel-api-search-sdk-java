@@ -2,6 +2,7 @@ package sdk.Helpers;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.Set;
 
 public class QueryString {
 
@@ -11,9 +12,9 @@ public class QueryString {
     encode(name, value);
   }
 
-  public void add(String name, String value) {
+  public void add(String k, String value) {
     query += "&";
-    encode(name, value);
+    encode(k, value);
   }
 
   private void encode(String name, String value) {

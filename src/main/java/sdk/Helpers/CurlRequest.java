@@ -6,11 +6,11 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.HashMap;
+import java.util.Map;
 
 public class CurlRequest {
 
-    public String sendRequest(HashMap<String, String> data) throws IOException {
+    public String sendRequest(Map<String, String> data) throws IOException {
         try {
             String endpoint = data.get("url")+"?"+data.get("params");
             URL url = new URL(endpoint);
@@ -28,7 +28,6 @@ public class CurlRequest {
             }
             conn.disconnect();
         } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
