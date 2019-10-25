@@ -18,7 +18,7 @@ public class Cars {
         CurlRequest curlRequest = new CurlRequest();
         Map<String, Object> yaml = this.getYaml();
         String auth = (String) yaml.get("auth");
-        String url = (String) yaml.get("hotels_get_images");
+        String url = (String) yaml.get("cars_book");
 
         QueryString qs = new QueryString("Authorization", auth);
         for(Map.Entry<String,String> entry : params.entrySet()){

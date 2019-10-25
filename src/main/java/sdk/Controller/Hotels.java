@@ -88,14 +88,17 @@ public class Hotels {
 
         return null;
     }
+    
     /**
      * Get List of hotel Ids
+     * 
      * @param params
+     * @return
      * @see api-docs
      * @throws Expception...
      * @return JSON Response
      */
-    public String getIds(HashMap<String, String> params){
+    public String getIds(HashMap<String, String> params) {
 
         String response;
 
@@ -122,7 +125,7 @@ public class Hotels {
         } catch (IOException e) {
              e.printStackTrace();
         }    
-
+        //return response;
         return null;
     }
     /**
@@ -148,6 +151,7 @@ public class Hotels {
         }
 
         Map<String,String> data = new HashMap<String,String>();
+        
         data.put("url", url);
         data.put("params",qs.toString());
 
