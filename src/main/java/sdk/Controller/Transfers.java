@@ -11,6 +11,11 @@ import sdk.Helpers.CurlRequest;
 import sdk.Helpers.QueryString;
 
 public class Transfers {
+/**
+ * Book Transport Service
+ * @param params
+ * @return Json Data
+ */
 public String book(HashMap<String, String> params){
 
     String response;
@@ -41,6 +46,11 @@ public String book(HashMap<String, String> params){
 
     return null;
 }
+/**
+ * Get Rates
+ * @param params
+ * @return Json Data
+ */
 public String getRates(HashMap<String, String> params){
     String response;
 
