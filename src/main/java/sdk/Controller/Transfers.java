@@ -23,7 +23,7 @@ public String book(HashMap<String, String> params){
     CurlRequest curlRequest = new CurlRequest();
     Map<String, Object> yaml = this.getYaml();
     String auth = (String) yaml.get("auth");
-    String url = (String) yaml.get("attraction_tickets_book");
+    String url = (String) yaml.get("transport_search");
 
     QueryString qs = new QueryString("Authorization", auth);
     for(Map.Entry<String,String> entry : params.entrySet()){
@@ -57,7 +57,7 @@ public String getRates(HashMap<String, String> params){
     CurlRequest curlRequest = new CurlRequest();
     Map<String, Object> yaml = this.getYaml();
     String auth = (String) yaml.get("auth");
-    String url = (String) yaml.get("attraction_tickets_book");
+    String url = (String) yaml.get("transport_book");
 
     QueryString qs = new QueryString("Authorization", auth);
     for(Map.Entry<String,String> entry : params.entrySet()){
